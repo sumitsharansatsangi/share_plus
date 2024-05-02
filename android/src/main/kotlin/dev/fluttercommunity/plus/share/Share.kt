@@ -64,7 +64,7 @@ internal class Share(
                 putExtra(Intent.EXTRA_SUBJECT, subject)
             }
         }
-        // If we dont want the result we use the old 'createChooser'
+        // If we don't want the result we use the old 'createChooser'
         val chooserIntent =
             if (withResult && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
                 // Build chooserIntent with broadcast to ShareSuccessManager on success
